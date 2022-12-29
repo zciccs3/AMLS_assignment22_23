@@ -20,3 +20,5 @@ Table 1. A brief summary of four tasks in terms of their contexts, models, confi
 4) In eye colour recognition, same models with different feature extraction methods are conducted. The accuracy when removing the image with sunglasses reaches 100% as well.
 
 `pip install dlib`
+
+![Image](https://github.com/zciccs3/-zciccs3-AMLS_assignment22_23/blob/main/Figures/A1_CNN_processed_images_training.png)
