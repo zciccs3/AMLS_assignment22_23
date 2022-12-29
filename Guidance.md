@@ -13,14 +13,13 @@ Download the programming directory [here](https://github.com/zciccs3/-zciccs3-AM
 
 ## Datasets preparation
 
-#### CelebA dataset
-This dataset is used in task A for binary classification tasks including gender detection and smile detection. It contains 5000 images for training and 1000 images for testing with faces of celebrities in real-world contexts. Each image is with the resolution of 178×218 in jpg format and annotated with attributes of 2 classes of gender (female and male) and 2 classes of emotion (smile or not) as labels. <br/> <br/>
-Celeba training and testing datasets can be downloaded [here](https://bit.ly/dataset_AMLS_22-23).
-
-#### Cartoon dataset
+#### Datasets download
+This dataset is used in task A for binary classification tasks including gender detection and smile detection. It contains 5000 images for training and 1000 images for testing with faces of celebrities in real-world contexts. Each image is with the resolution of 178×218 in jpg format and annotated with attributes of 2 classes of gender (female and male) and 2 classes of emotion (smile or not) as labels. <br/>
+Download [Celeba training and testing datasets](https://bit.ly/dataset_AMLS_22-23). <br/><br/>
 Cartoon dataset is used in task B for multiclass classification tasks including face shape recognition and eye colour recognition. It contains 10000 images for training and 2500 images for testing with cartoon faces in blank context. Each image is with the resolution of 500×500 in png format and annotated with attributes of 5 classes of face shape and 5 classes of eye colour labels. <br/>
+Download [Cartoon_set training and testing datasets](https://google.github.io/cartoonset/).
 
-
+#### Images re-allocation in folders
 
 
 
