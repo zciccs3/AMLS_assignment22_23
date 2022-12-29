@@ -33,7 +33,15 @@ Table 1. A brief summary of four tasks in terms of their contexts, models, confi
 * **cv2**: an open-source library containing valuable computer vision algorithms.
 * **PIL**: a library possesses strong image processing capabilities.
 
+### Key modules and their roles
+**main.py** can be seen as the start of this project, mainly responsible for calling functions and classes in each task to realise data loading, image pre-processing, model construction, model training and testing, classification results evaluations, etc. Codes run following the logic in this document. 
+#### A1 - gender detection
 
+#### A2 - smile detection
+
+#### B1 - face shape recognition
+
+#### B2 - eye color recognition
 
 
 
