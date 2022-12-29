@@ -1,4 +1,4 @@
-## Brief summary of AMLS project
+# Brief summary of AMLS project
 In this project, four classification tasks are solved, including two binary classification problems (gender detection and smile detection), and two multiclass classification problems (face shape recognition and eye colour recognition), based on various machine learning algorithms, comprising logistic regression, Convolutional Neural Network (CNN), hybrid CNN-Support Vector Machine (SVM) and random forest (RF). Different algorithms are used in each task to compare their performances, thereby discovering the most suitable approach.
 
 Table 1. A brief summary of four tasks in terms of their contexts, models, configurations, etc.
@@ -13,13 +13,13 @@ Table 1. A brief summary of four tasks in terms of their contexts, models, confi
 | Image pre-processing methods for other models | Image resize; Convert to arrays | Same as CNN models | Image resize; Grayscale conversion; Convert to arrays | Image resize; Eye localisation; Compare the array mean with threshold 60 (judge wearing sunglasses or not); Convert to arrays |
 | Best accuracy and its model | 95.1% (CNN)  | 89.6% (CNN-SVM) | 100% (RF) | 100% (RF) |
 
-### Contributions of this project
+## Contributions of this project
 1) To detect genders, both logistic regression and CNN model with two image sizes provided to the network are used. Among them, CNN model with 64×64 resized image generate better accuracy of 95.1%. 
 2) In smile detection, both CNN model with moth localisation and face detection image pre-processing methods and hybrid CNN-SVM model are used, discovering that performance of CNN-SVM with mouth localisation performs better with accuracy of 89.6%. 
 3) In face shape recognition, both CNN and random forest model are implemented, finding that accuracy of the latter model with image array as features is the optimum of 100%. 
 4) In eye colour recognition, same models with different feature extraction methods are conducted. The accuracy when removing the image with sunglasses reaches 100% as well.
 
-### Required libraries in Python
+## Required libraries in Python
 * **torch**: a machine learning library including scientific computing framework, providing algorithms for deep learning. Packages mainly include nn for neural networks (NNs) and au-tograd, optim, utils for model training and data acquisition.
 * **numpy**: support for multi-dimensional matrices and arrays, and the collection of mathematical functions to operate them.
 * **pandas**: a manipulation tool for powerful data analysis.
@@ -33,17 +33,17 @@ Table 1. A brief summary of four tasks in terms of their contexts, models, confi
 * **cv2**: an open-source library containing valuable computer vision algorithms.
 * **PIL**: a library possesses strong image processing capabilities.
 
-### Key modules and their roles
+## Key modules and their roles
 **main.py** can be seen as the start of this project, mainly responsible for calling functions and classes in each task to realise data loading, image pre-processing, model construction, model training and testing, classification results evaluations, etc. Codes run following the logic in this document. 
-#### A1 - gender detection
+### A1 - gender detection
 **A1_image_preprocessing module** is used to process images before fitting the model. Function Origi-nal_image_feature_extraction is used to extract features of full images and convert to arrays for logistic regression. <br/><br/>
 **A1_train_and_test module** is used to train and test the logistic regression model with processed features and produce accuracy, classification report and confusion matrix to evaluate its performance.
 **A1_CNN module** builds the CNN architecture and dataloader, trains and tests the model and collects the accuracy finally.
-#### A2 - smile detection
+### A2 - smile detection
 
-#### B1 - face shape recognition
+### B1 - face shape recognition
 
-#### B2 - eye color recognition
+### B2 - eye color recognition
 
 
 
