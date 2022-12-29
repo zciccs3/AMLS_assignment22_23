@@ -67,6 +67,4 @@ Table 1. A brief summary of four tasks in terms of their contexts, models, confi
 
 ![Image](https://github.com/zciccs3/-zciccs3-AMLS_assignment22_23/blob/main/Figures/Pycharm%20logo.png)
 
-`pip install dlib`
-
-[A1_CNN](https://github.com/zciccs3/-zciccs3-AMLS_assignment22_23/blob/main/A1/A1_CNN.py)
+"PyCharm is an integrated development environment (IDE) used for programming in Python. It provides code analysis, a graphical debugger, an integrated unit tester, integration with version control systems, and supports web development with Django."
