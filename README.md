@@ -13,7 +13,6 @@ Table 1. A brief summary of four tasks in terms of their contexts, models, confi
 | Image pre-processing methods for other models | Image resize; Convert to arrays | Same as CNN models | Image resize; Grayscale conversion; Convert to arrays | Image resize; Eye localisation; Compare the array mean with threshold 60 (judge wearing sunglasses or not); Convert to arrays |
 | Best accuracy and its model | 95.1% (CNN)  | 89.6% (CNN-SVM) | 100% (RF) | 100% (RF) |
 
----
 ####
 ### Contributions of this project
 1) To detect genders, both logistic regression and CNN model with two image sizes provided to the network are used. Among them, CNN model with 64×64 resized image generate better accuracy of 95.1%. 
