@@ -20,7 +20,8 @@ Cartoon dataset is used in task B for multiclass classification tasks including 
 Download [Cartoon_set training and testing datasets](https://google.github.io/cartoonset/).
 
 #### Images re-allocation in folders
-
+The Datasets folder in this project repository is empty. After downloading these two datasets from the resource, please arrange the training and testing images in two datasets following the structure shown below. 
+![Image]
 
 
 
