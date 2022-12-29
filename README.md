@@ -1,5 +1,5 @@
 ## Brief summary of AMLS project
-In this paper, four classification tasks are solved, including two binary classification problems (gender detection and smile detection), and two multiclass classification problems (face shape recognition and eye colour recognition), based on various machine learning algorithms, comprising logistic regression, Convolutional Neural Network (CNN), hybrid CNN-Support Vector Machine (SVM) and random forest (RF). Different algorithms are used in each task to compare their performances, thereby discovering the most suitable approach.
+In this project, four classification tasks are solved, including two binary classification problems (gender detection and smile detection), and two multiclass classification problems (face shape recognition and eye colour recognition), based on various machine learning algorithms, comprising logistic regression, Convolutional Neural Network (CNN), hybrid CNN-Support Vector Machine (SVM) and random forest (RF). Different algorithms are used in each task to compare their performances, thereby discovering the most suitable approach.
 
 Table 1. A brief summary of four tasks in terms of their contexts, models, configurations, etc.
 |          | Task A1: gender detection    | Task A2: smile detection     | Task B1: face shape recognition | Task B2: eye colour recognition  
