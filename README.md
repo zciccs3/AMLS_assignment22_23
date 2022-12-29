@@ -19,7 +19,7 @@ Table 1. A brief summary of four tasks in terms of their contexts, models, confi
 3) In face shape recognition, both CNN and random forest model are implemented, finding that accuracy of the latter model with image array as features is the optimum of 100%. 
 4) In eye colour recognition, same models with different feature extraction methods are conducted. The accuracy when removing the image with sunglasses reaches 100% as well.
 
-## Required libraries in Python
+## Required packages in Python
 * **torch**: a machine learning library including scientific computing framework, providing algorithms for deep learning. Packages mainly include nn for neural networks (NNs) and au-tograd, optim, utils for model training and data acquisition.
 * **numpy**: support for multi-dimensional matrices and arrays, and the collection of mathematical functions to operate them.
 * **pandas**: a manipulation tool for powerful data analysis.
@@ -35,16 +35,33 @@ Table 1. A brief summary of four tasks in terms of their contexts, models, confi
 
 ## Key modules and their roles
 **main.py** can be seen as the start of this project, mainly responsible for calling functions and classes in each task to realise data loading, image pre-processing, model construction, model training and testing, classification results evaluations, etc. Codes run following the logic in this document. 
+
 ### A1 - gender detection
-**A1_image_preprocessing module** is used to process images before fitting the model. Function Origi-nal_image_feature_extraction is used to extract features of full images and convert to arrays for logistic regression. <br/><br/>
-**A1_train_and_test module** is used to train and test the logistic regression model with processed features and produce accuracy, classification report and confusion matrix to evaluate its performance.
-**A1_CNN module** builds the CNN architecture and dataloader, trains and tests the model and collects the accuracy finally.
+
+**A1_image_preprocessing.py** is used to process images before fitting the model. Function Original_image_feature_extraction is used to extract features of full images and convert to arrays for logistic regression. <br/>
+**A1_train_and_test.py** is used to train and test the logistic regression model with processed features and produce accuracy, classification report and confusion matrix to evaluate its performance. <br/>
+**A1_CNN module.py** builds the CNN architecture and dataloader, trains and tests the model and collects the accuracy finally. <br/>
+
 ### A2 - smile detection
+
+**A2_CNN_face_recognition.py** aims to load the data with face detection, build the CNN model, train and test the model, and finally test the accuracy and classification results.
+**A2_CNN_mouth.py** has the same purpose as last module but only change from face detection to mouth localisation.
+**A2_SVM_model_wrapper.py** is responsible for hybrid CNN-SVM model, connecting the fully connected layer of CNN to SVM, together with the fitting of CNN and SVM as well as the evaluation and prediction of the hybrid-model. 
+**A2_build_CNN_model.py** builds up the architecture of CNN from layer to layer and compile the model. 
+**A2_image_preprocessing.py** is used to pre-process the image, including methods of mouth localisation and full image resizing.
 
 ### B1 - face shape recognition
 
+**B1_CNN.py** loads image data, build, train and test the CNN model, and finally tests the accuracy and classification results.
+**B1_image_preprocessing.py** realises image pre-processing, including grayscale conversion, image resize, array format conversion, etc. used in random forest model. 
+**B1_lab2_landmarks.py** detects faces in images as well as produces facial landmarks to operating as features in random forest model.
+
 ### B2 - eye color recognition
 
+**B2_Eyes_color_recognition_CNN.py** loads images, trains and tests CNN model, and finally tests the accuracy and classification results.
+**B2_image_preprocessing.py** defines three functions corresponding to three image processing methods, including double-eye localisation, single-eye localisation and single-eye localisation with the removal of sunflasses attached images. 
+**B2_train_and_test.py** trains and tests random forest models with three image processing methods mentioned in the last module.
+**B2_hyper_parameter_tuning.py** is responsible in tuning hyper-parameters to fit the random forest model based on grid search method.
 
 
 `pip install dlib`
