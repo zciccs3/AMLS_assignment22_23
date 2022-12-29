@@ -71,4 +71,4 @@ Table 1. A brief summary of four tasks in terms of their contexts, models, confi
 
 ## How to start
 
-To start running this project, a brief guidance is summarised in [Guidance]()
+A brief guidance is summarised in [Guidance](https://github.com/zciccs3/-zciccs3-AMLS_assignment22_23/blob/main/Guidance.md) for users to follow. It contains how to install the required packages and how to run the code to finish these tasks from the very beginning. Please read this file in detail if further support and guidance are needed. 
