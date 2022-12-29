@@ -7,7 +7,7 @@ This file provides the main guidance for running this project successfully.
 #### Python IDE installation
 Install Integrated Development Environment (IDE) for Python.
 #### Package installation
-Install all packages required to run this project: torch, numpy, pandas, os, matplotlib, face_recognition, Keras, dlib, seaborn and PIL. Specifically, it is necessary to install dlib and cmake before installing the face_recognition package. The detailed introduction and instructions for installing face_recognition step by stwep can be found [here](https://github.com/ageitgey/face_recognition).
+Install all packages required to run this project: torch, numpy, pandas, os, matplotlib, face_recognition, Keras, dlib, seaborn and PIL. Specifically, it is necessary to install dlib and cmake before installing the face_recognition package. The detailed introduction and instructions for installing face_recognition step by step can be found [here](https://github.com/ageitgey/face_recognition).
 #### Code download
 Download the programming directory [here](https://github.com/zciccs3/-zciccs3-AMLS_assignment22_23) in Github.
 
@@ -20,8 +20,8 @@ Cartoon dataset is used in task B for multiclass classification tasks including 
 Download [Cartoon_set training and testing datasets](https://google.github.io/cartoonset/).
 
 #### Images re-allocation in folders
-The Datasets folder in this project repository is empty. After downloading these two datasets from the resource, please arrange the training and testing images in two datasets following the structure shown below. 
-![Image]
+The Datasets folder in this project repository is empty. After downloading these two datasets from the resource, please arrange the training and testing images in two datasets following the structure shown below. Training and testing images within celeba dataset should be copied to celeba folder and celeba_test folder, respectively. Similarly, training and testing images within cartoon_set dataset should be copied to cartoon_set folder and cartoon_set_test folder, respectively. <br/>
+![Image](https://github.com/zciccs3/-zciccs3-AMLS_assignment22_23/blob/main/Figures/Dataset%20images%20allocation.jpg)
 
 
 
