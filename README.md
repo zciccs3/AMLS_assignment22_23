@@ -44,24 +44,24 @@ Table 1. A brief summary of four tasks in terms of their contexts, models, confi
 
 ### A2 - smile detection
 
-**A2_CNN_face_recognition.py** aims to load the data with face detection, build the CNN model, train and test the model, and finally test the accuracy and classification results.
-**A2_CNN_mouth.py** has the same purpose as last module but only change from face detection to mouth localisation.
-**A2_SVM_model_wrapper.py** is responsible for hybrid CNN-SVM model, connecting the fully connected layer of CNN to SVM, together with the fitting of CNN and SVM as well as the evaluation and prediction of the hybrid-model. 
-**A2_build_CNN_model.py** builds up the architecture of CNN from layer to layer and compile the model. 
-**A2_image_preprocessing.py** is used to pre-process the image, including methods of mouth localisation and full image resizing.
+**A2_CNN_face_recognition.py** aims to load the data with face detection, build the CNN model, train and test the model, and finally test the accuracy and classification results.<br/>
+**A2_CNN_mouth.py** has the same purpose as last module but only change from face detection to mouth localisation. <br/>
+**A2_SVM_model_wrapper.py** is responsible for hybrid CNN-SVM model, connecting the fully connected layer of CNN to SVM, together with the fitting of CNN and SVM as well as the evaluation and prediction of the hybrid-model. <br/>
+**A2_build_CNN_model.py** builds up the architecture of CNN from layer to layer and compile the model. <br/>
+**A2_image_preprocessing.py** is used to pre-process the image, including methods of mouth localisation and full image resizing. <br/>
 
 ### B1 - face shape recognition
 
-**B1_CNN.py** loads image data, build, train and test the CNN model, and finally tests the accuracy and classification results.
-**B1_image_preprocessing.py** realises image pre-processing, including grayscale conversion, image resize, array format conversion, etc. used in random forest model. 
-**B1_lab2_landmarks.py** detects faces in images as well as produces facial landmarks to operating as features in random forest model.
+**B1_CNN.py** loads image data, build, train and test the CNN model, and finally tests the accuracy and classification results. <br/>
+**B1_image_preprocessing.py** realises image pre-processing, including grayscale conversion, image resize, array format conversion, etc. used in random forest model. <br/>
+**B1_lab2_landmarks.py** detects faces in images as well as produces facial landmarks to operating as features in random forest model. <br/>
 
 ### B2 - eye color recognition
 
-**B2_Eyes_color_recognition_CNN.py** loads images, trains and tests CNN model, and finally tests the accuracy and classification results.
-**B2_image_preprocessing.py** defines three functions corresponding to three image processing methods, including double-eye localisation, single-eye localisation and single-eye localisation with the removal of sunflasses attached images. 
-**B2_train_and_test.py** trains and tests random forest models with three image processing methods mentioned in the last module.
-**B2_hyper_parameter_tuning.py** is responsible in tuning hyper-parameters to fit the random forest model based on grid search method.
+**B2_Eyes_color_recognition_CNN.py** loads images, trains and tests CNN model, and finally tests the accuracy and classification results. <br/>
+**B2_image_preprocessing.py** defines three functions corresponding to three image processing methods, including double-eye localisation, single-eye localisation and single-eye localisation with the removal of sunflasses attached images. <br/>
+**B2_train_and_test.py** trains and tests random forest models with three image processing methods mentioned in the last module. <br/>
+**B2_hyper_parameter_tuning.py** is responsible in tuning hyper-parameters to fit the random forest model based on grid search method. <br/>
 
 
 `pip install dlib`
