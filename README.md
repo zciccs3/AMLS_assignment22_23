@@ -63,6 +63,9 @@ Table 1. A brief summary of four tasks in terms of their contexts, models, confi
 **B2_train_and_test.py** trains and tests random forest models with three image processing methods mentioned in the last module. <br/>
 **B2_hyper_parameter_tuning.py** is responsible in tuning hyper-parameters to fit the random forest model based on grid search method. <br/>
 
+## Software
+
+
 
 `pip install dlib`
 
