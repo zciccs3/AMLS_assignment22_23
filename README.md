@@ -18,4 +18,4 @@ Table 1. A brief summary of four tasks in terms of their contexts, models, confi
 2) In smile detection, both CNN model with moth localisation and face detection image pre-processing methods and hybrid CNN-SVM model are used, discovering that performance of CNN-SVM with mouth localisation performs better with accuracy of 89.6%. 
 3) In face shape recognition, both CNN and random forest model are implemented, finding that accuracy of the latter model with image array as features is the optimum of 100%. 
 4) In eye colour recognition, same models with different feature extraction methods are conducted. The accuracy when removing the image with sunglasses reaches 100% as well.
-'pip install dlib'
+·pip install dlib·
