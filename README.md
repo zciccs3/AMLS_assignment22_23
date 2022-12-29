@@ -20,7 +20,7 @@ Table 1. A brief summary of four tasks in terms of their contexts, models, confi
 4) In eye colour recognition, same models with different feature extraction methods are conducted. The accuracy when removing the image with sunglasses reaches 100% as well.
 
 ### Required libraries in Python
-* *Torch*: 
+* **Torch**: 
 
 
 
