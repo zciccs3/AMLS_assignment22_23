@@ -20,7 +20,16 @@ Table 1. A brief summary of four tasks in terms of their contexts, models, confi
 4) In eye colour recognition, same models with different feature extraction methods are conducted. The accuracy when removing the image with sunglasses reaches 100% as well.
 
 ### Required libraries in Python
-* **Torch**: 
+* **Torch**: a machine learning library including scientific computing framework, providing algorithms for deep learning. Packages mainly include nn for neural networks (NNs) and au-tograd, optim, utils for model training and data acquisition.
+* **Numpy**: support for multi-dimensional matrices and arrays, and the collection of mathematical functions to operate them.
+* **Pandas**: a manipulation tool for powerful data analysis.
+* **os**: manipulate operating systems and PC file systems.
+* **matplotlib**: functions for visualisation.
+* **face_recognition**: methods for dealing with faces in images. Build on the basis of dlib library.
+* **Keras**: interface for artificial NNs and Tensorflow li-brary.
+* **dlib**: a cross-platform software library where face detector and landmarks detection are used in this project.
+* **sklearn**: support supervised and unsupervised learning and provide classification, regression, clustering, etc. algorithms.
+
 
 
 
