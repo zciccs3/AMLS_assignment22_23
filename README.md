@@ -36,7 +36,7 @@ Table 1. A brief summary of four tasks in terms of their contexts, models, confi
 ### Key modules and their roles
 **main.py** can be seen as the start of this project, mainly responsible for calling functions and classes in each task to realise data loading, image pre-processing, model construction, model training and testing, classification results evaluations, etc. Codes run following the logic in this document. 
 #### A1 - gender detection
-**A1_image_preprocessing module** is used to process images before fitting the model. Function Origi-nal_image_feature_extraction is used to extract features of full images and convert to arrays for logistic regression. 
+**A1_image_preprocessing module** is used to process images before fitting the model. Function Origi-nal_image_feature_extraction is used to extract features of full images and convert to arrays for logistic regression. <br/><br/>
 **A1_train_and_test module** is used to train and test the logistic regression model with processed features and produce accuracy, classification report and confusion matrix to evaluate its performance.
 **A1_CNN module** builds the CNN architecture and dataloader, trains and tests the model and collects the accuracy finally.
 #### A2 - smile detection
