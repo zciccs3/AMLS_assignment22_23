@@ -37,7 +37,6 @@ Table 1. A brief summary of four tasks in terms of their contexts, models, confi
 **main.py** can be seen as the start of this project, mainly responsible for calling functions and classes in each task to realise data loading, image pre-processing, model construction, model training and testing, classification results evaluations, etc. Codes run following the logic in this document. 
 #### A1 - gender detection
 gender
-
 smile
 #### A2 - smile detection
 
