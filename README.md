@@ -13,12 +13,18 @@ Table 1. A brief summary of four tasks in terms of their contexts, models, confi
 | Image pre-processing methods for other models | Image resize; Convert to arrays | Same as CNN models | Image resize; Grayscale conversion; Convert to arrays | Image resize; Eye localisation; Compare the array mean with threshold 60 (judge wearing sunglasses or not); Convert to arrays |
 | Best accuracy and its model | 95.1% (CNN)  | 89.6% (CNN-SVM) | 100% (RF) | 100% (RF) |
 
-####
 ### Contributions of this project
 1) To detect genders, both logistic regression and CNN model with two image sizes provided to the network are used. Among them, CNN model with 64×64 resized image generate better accuracy of 95.1%. 
 2) In smile detection, both CNN model with moth localisation and face detection image pre-processing methods and hybrid CNN-SVM model are used, discovering that performance of CNN-SVM with mouth localisation performs better with accuracy of 89.6%. 
 3) In face shape recognition, both CNN and random forest model are implemented, finding that accuracy of the latter model with image array as features is the optimum of 100%. 
 4) In eye colour recognition, same models with different feature extraction methods are conducted. The accuracy when removing the image with sunglasses reaches 100% as well.
+
+### Required libraries in Python
+* Torch: 
+
+
+
+
 
 `pip install dlib`
 
