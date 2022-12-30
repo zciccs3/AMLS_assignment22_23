@@ -1,29 +1,4 @@
-# README -- dataset_AMLS_22-23.zip
+## Datasets instruction
 
-## ./dataset_AMLS_22-23.zip
-
-The dataset for this assignment
-
-### ./dataset_AMLS_22-23.zip/celeba
-
-The dataset for task A1 and A2.
-
-#### ./dataset_AMLS_22-23.zip/cartoon_set/img
-
-5000 images of CelebA set.
-
-#### ./dataset_AMLS_22-23.zip/cartoon_set/labels.csv
-
-the labels for the celeba dataset. The first column is the index. The second column is the corresponding file name. The third column is the gender ({-1, +1}). The last column is whether the person is smiling or not smiling ({-1, +1})
-
-### ./dataset_AMLS_22-23.zip/cartoon_set
-
-The dataset for task B1 and B2.
-
-#### ./dataset_AMLS_22-23.zip/cartoon_set/img
-
-10000 images of cartoon set
-
-#### ./dataset_AMLS_22-23.zip/cartoon_set/labels.csv
-
-the labels for the cartoon set. The first column is the index. The second column is eye colour (0-4), the third column is face shape (0-4), the last column is the corresponding file name.
+The Datasets folder in this project repository is empty. After downloading two datasets, please arrange the training and testing images in two datasets following the structure shown below. Training and testing images within celeba dataset should be copied to celeba folder and celeba_test folder, respectively. Similarly, training and testing images within cartoon_set dataset should be copied to cartoon_set folder and cartoon_set_test folder, respectively. <br/>
+![Image](https://github.com/zciccs3/-zciccs3-AMLS_assignment22_23/blob/main/Figures/Dataset%20images%20allocation.jpg)
