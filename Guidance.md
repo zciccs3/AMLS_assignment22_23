@@ -27,13 +27,10 @@ The Datasets folder in this project repository is empty. After downloading these
 
 After the activation of training and testing sources and the definition of classes and batches in CNN training, the execution of four classification tasks starts.
 
-#### Task 1 - gender detection
-Three models are implemented to solve gender detection problem, including CNN with 64 * 64 resized images and 32 * 32 resized images, respectively, and the logistic regression model. The comparison of their performances and merits and drawbacks analysis can be found in the paper. <br/>
-
+#### Task A1 - gender detection
+Three models are implemented to solve gender detection problem, including CNN with 64 * 64 and 32 * 32 resized images, respectively, and the logistic regression model. The comparison of their performances and merits and drawbacks analysis can be found in the paper. <br/>
 ```
-# A1 ==================================================================================================================
 # Method 1 - CNN with full image
-print('Starting A1-method 2: CNN with full image...')
 train_dataloader_A1, test_dataloader_A1 = A1_CNN_dataloader()
 # Train CNN model
 A1.A1_CNN.train(train_dataloader_A1)
@@ -41,13 +38,91 @@ A1.A1_CNN.train(train_dataloader_A1)
 A1.A1_CNN.test_image_examples(test_dataloader_A1, A1_classes, test_batch_size_A1)
 # Test the classification accuracy
 A1.A1_CNN.test_accuracy_rate(test_dataloader_A1, test_batch_size_A1)
-# ------------------------------------------------------------------------------------------------
-# Method 2 - Logistic Regression with full image
-print('Starting A1-method 1: Logistic Regression with full image...')
-img_size = 128
-Accuracy, _ = A1_logisticRegression_full_image(labels_dir, celeba_train_labels_filename, celeba_train_images_dir,
-                                      celeba_test_labels_filename, celeba_test_images_dir, img_size)
 ```
+With the usage of CNN model, both the training and testing dataloaders are activated to load batches of paires of images and labels in training and testing stages, respectively. Then, the CNN model is trained and stored in the "Good models and results" folder. Examples of processed images and classification results, as well as the classification accuracy are reported in the following lines. <br/>
+```
+# Method 2 - Logistic Regression with full image
+img_size = 128
+Accuracy, _ = A1_logisticRegression_full_image(...)
+```
+As one of the most commonly used binary classification algorithm, logistic regression is used as well but difficult to be convergent with low classification accuracy.
+
+#### Task A2 - smile detection
+
+Four methods by changing the ategory of classifiers and image pre-processing methods are implemented. Both CNN and hybrid CNN-SVM models are used with face detection and mouth localisation for each of them, respectively. <br/>
+```
+# method 1 - CNN with face recognition
+train_dataloader1, test_dataloader1 = A2_CNN_face_recognition_dataloader()
+# Train CNN model
+A2.A2_CNN_face_recognition.train(train_dataloader1)
+# Show examples of processed images and classification results
+A2.A2_CNN_face_recognition.test_image_examples(test_dataloader1, A2_classes, test_batch_size_A2)
+# Test the classification accuracy
+A2.A2_CNN_face_recognition.test_accuracy_rate(test_dataloader1, test_batch_size_A2)
+```
+CNN model with the input of images whose face regions are detected and cropped is used as the first model, containing training and testing.
+```
+# method 2 - CNN with mouth localisation
+train_dataloader2, test_dataloader2 = A2_CNN_mouth_localisation_dataloader()
+# Train CNN model
+A2.A2_CNN_mouth.train(train_dataloader2)
+# Show examples of processed images and classification results
+A2.A2_CNN_mouth.test_image_examples(test_dataloader2, A2_classes, test_batch_size_A2)
+# Test the classification accuracy
+A2.A2_CNN_mouth.test_accuracy_rate(test_dataloader2, test_batch_size_A2)
+```
+With the same model structure but only changing the input image by localising the mouth region is implemented.
+```
+# method 3 - hybrid CNN-SVM with full image
+CNN_SVM_full_image_train_and_test()
+# method 4 - hybrid CNN-SVM with mouth localisation
+CNN_SVM_mouth_localisation_train_and_test()
+```
+Then, two hybrid CNN-SVM models with the input of full image and the mouth region as features are used. Code lines above show the training and testing of these models.
+
+#### Task B1 - face shape recognition
+
+```
+# Method 1 - CNN
+train_dataloader_B1, test_dataloader_B1 = B1_CNN_dataloader()
+# Train the CNN model
+B1.B1_CNN.train(train_dataloader_B1)
+# Show examples of processed images and classification results
+B1.B1_CNN.test_image_examples(test_dataloader_B1, B1_classes, test_batch_size_B1)
+# Test the classification accuracy
+B1.B1_CNN.test_accuracy_rate(test_dataloader_B1, test_batch_size_B1)
+```
+Similarly, the CNN model is used from the activation of both training and testing dataloader to the training and testing of the model.
+```
+# Method 2 - Random Forest_imageArray method
+Accuracy_RF_imageArray, Confusion_matrix = RF_imageArray_train_and_test()
+# Method 3 - Random Forest_landmarks method
+Prediction = RF_landmarks_train_and_test()
+```
+Then, two Random Forest models are utilised. The only difference between them is the feature extraction method, where image resize, grayscale and array conversion is used for the first model, and the extraction of 68 facial landmarks is used for the second model.
+
+#### Task B2 - eye colour recognition
+
+```
+# Method 1 - RF with double eyes image
+Accuracy_double_eyes = B2_random_forest_double_eyes_train_and_test(...)
+# Method 2 - RF with single eye image
+Accuracy_single_eye = B2_random_forest_single_eye_train_and_test(...)
+# Method 3 - RF with single eye image glass removal
+Accuracy_glass_removal = B2_random_forest_single_eye_glass_removal_train_and_test(...)
+```
+In eye-colour recognition, Random Forest models are used again. The only difference between these three methods is the image pre-processing procedure, where double-eye localisation, single-eye localisation, and single-eye localisation with the removal of images whose face is covered by black sunglasses are used, respectively. The second method aims to explore the effect of facial interferences like the existence of glasses frames in different colours, while the target of the third method is to avoid the confusion in training process due to the black sunglasses in some images. 
+```
+# Method 4 - CNN with double eyes image without glass removal
+train_dataloader_B2, test_dataloader_B2 = B2_CNN_dataloader()
+# Train CNN model
+B2.B2_Eyes_color_recognition_CNN.train(train_dataloader_B2)
+# Show examples of processed images and classification results
+B2.B2_Eyes_color_recognition_CNN.test_image_examples(test_dataloader_B2, B2_classes, test_batch_size_B2)
+# Test the classification accuracy
+B2.B2_Eyes_color_recognition_CNN.test_accuracy_rate(test_dataloader_B2, test_batch_size_B2)
+```
+In addition, CNN model is used as well to compare its performance with Random Forest-based models. 
 
 ## Notes
 
