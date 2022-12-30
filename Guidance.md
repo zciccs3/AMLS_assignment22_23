@@ -25,7 +25,29 @@ The Datasets folder in this project repository is empty. After downloading these
 
 ## Main execution
 
+After the activation of training and testing sources and the definition of classes and batches in CNN training, the execution of four classification tasks starts.
 
+#### Task 1 - gender detection
+Three models are implemented to solve gender detection problem, including CNN with 64 * 64 resized images and 32 * 32 resized images, respectively, and the logistic regression model. The comparison of their performances and merits and drawbacks analysis can be found in the paper. <br/>
+
+```
+# A1 ==================================================================================================================
+# Method 1 - CNN with full image
+print('Starting A1-method 2: CNN with full image...')
+train_dataloader_A1, test_dataloader_A1 = A1_CNN_dataloader()
+# Train CNN model
+A1.A1_CNN.train(train_dataloader_A1)
+# Show examples of processed images and classification results
+A1.A1_CNN.test_image_examples(test_dataloader_A1, A1_classes, test_batch_size_A1)
+# Test the classification accuracy
+A1.A1_CNN.test_accuracy_rate(test_dataloader_A1, test_batch_size_A1)
+# ------------------------------------------------------------------------------------------------
+# Method 2 - Logistic Regression with full image
+print('Starting A1-method 1: Logistic Regression with full image...')
+img_size = 128
+Accuracy, _ = A1_logisticRegression_full_image(labels_dir, celeba_train_labels_filename, celeba_train_images_dir,
+                                      celeba_test_labels_filename, celeba_test_images_dir, img_size)
+```
 
 ## Notes
 
