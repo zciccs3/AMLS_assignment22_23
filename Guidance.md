@@ -25,7 +25,7 @@ The [Datasets](https://github.com/zciccs3/-zciccs3-AMLS_assignment22_23/tree/mai
 
 ## Main execution
 
-**To execute the programme, please run the [Main.py](https://github.com/zciccs3/-zciccs3-AMLS_assignment22_23/blob/main/Main.py) in the repository directly, which will execute all methods in each task in the order as mentioned below. Please note that all training stages in CNN-based methods are added as comments and the previously well-trained models are used to show examples of classification results and test the accuracy rates. Please re-run the training stages to obtain new models which will replace the original ones stored in the [Good models and results](https://github.com/zciccs3/-zciccs3-AMLS_assignment22_23/tree/main/Good%20models%20and%20results) folder.** <br/><br/>
+**To execute the programme, please run the [Main.py](https://github.com/zciccs3/-zciccs3-AMLS_assignment22_23/blob/main/Main.py) in the repository directly, which will execute all methods in each task in the order as mentioned below. Please note that all training stages in CNN-based methods are added as comments as they are very time-consuming, so the previously well-trained models are used to show examples of classification results and test the accuracy rates. Please re-run the training stages to obtain new models which will replace the original ones stored in the [Good models and results](https://github.com/zciccs3/-zciccs3-AMLS_assignment22_23/tree/main/Good%20models%20and%20results) folder.** <br/><br/>
 After the activation of training and testing sources and the definition of classes and batches in CNN training, the execution of four classification tasks starts.
 
 #### Task A1 - gender detection
