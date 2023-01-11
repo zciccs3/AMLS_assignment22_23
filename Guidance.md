@@ -40,7 +40,7 @@ A1.A1_CNN.test_image_examples(test_dataloader_A1, A1_classes, test_batch_size_A1
 # Test the classification accuracy
 A1.A1_CNN.test_accuracy_rate(test_dataloader_A1, test_batch_size_A1)
 ```
-With the usage of CNN model, both the training and testing dataloaders are activated to load batches of paires of images and labels in training and testing stages, respectively. Then, the CNN model is trained and stored in the "Good models and results" folder. Examples of processed images and classification results, as well as the classification accuracy are reported in the following lines. <br/>
+With the usage of CNN model, both the training and testing dataloaders are activated to load batches of paires of images and labels in training and testing stages, respectively. Then, the CNN model is trained and stored in the [Good models and results](https://github.com/zciccs3/-zciccs3-AMLS_assignment22_23/tree/main/Good%20models%20and%20results) folder. Examples of processed images and classification results, as well as the classification accuracy are reported in the following lines. <br/>
 ```
 # Method 2 - Logistic Regression with full image
 img_size = 128
@@ -129,5 +129,4 @@ In addition, CNN model is used as well to compare its performance with Random Fo
 
 1. Due to the fact that many models are tried on each classification task, it is recommended that models are better to be run each by each via adding comments on other models except for the evaluated one to avoid the confusion of results. 
 2. Please copy the file "shape_predictor_68_face_landmarks.dat" inside the Good models and results folder for the extraction of facial landmarks in some proposed models.
-3. The well-trained models for CNN-based methods in all tasks are stored in the Good models and results folder. To re-train these models, new well-trained models will substitute the previous model in pkl format. If you only prefer to test the model to show classification results and accuracy, please add comment on the "train" codes and only run test_image_examples and test_accuracy_rate functions so that the previously well-trained models will be called to predict the result and show model performances. Backups of CNN-based well-trained models for each task are stored in the folder of each task. 
-
+3. The well-trained models for CNN-based methods in all tasks are stored in the [Good models and results](https://github.com/zciccs3/-zciccs3-AMLS_assignment22_23/tree/main/Good%20models%20and%20results) folder. To re-train these models, new well-trained models will substitute the previous model in pkl format. If you only prefer to test the model to show classification results and accuracy, please add comment on the "train" codes and only run test_image_examples and test_accuracy_rate functions so that the previously well-trained models will be called to predict the result and show model performances. Backups of CNN-based well-trained models for each task are stored in the folder of each task. 
