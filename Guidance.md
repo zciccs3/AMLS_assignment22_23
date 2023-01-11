@@ -25,6 +25,7 @@ The Datasets folder in this project repository is empty. After downloading these
 
 ## Main execution
 
+**To execute the programme, please run the main.py in the repository directly, which will execute all methods in each task in the order as mentioned below.**
 After the activation of training and testing sources and the definition of classes and batches in CNN training, the execution of four classification tasks starts.
 
 #### Task A1 - gender detection
