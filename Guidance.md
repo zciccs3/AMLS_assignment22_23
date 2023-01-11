@@ -1,6 +1,6 @@
 # Guidance
 
-This file provides the main guidance for running this project successfully.
+This file provides the main guidance for running this project successfully. Please copy the file [shape_predictor_68_face_landmarks.dat](https://www.kaggle.com/datasets/sergiovirahonda/shape-predictor-68-face-landmarksdat?resource=download) inside the Good models and results folder for the extraction of facial landmarks in some proposed models. 
 
 ## Setups
 
