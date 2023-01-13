@@ -46,7 +46,7 @@ With the usage of CNN model, both the training and testing dataloaders are activ
 img_size = 128
 Accuracy, _ = A1_logisticRegression_full_image(...)
 ```
-As one of the most commonly used binary classification algorithm, logistic regression is used as well but difficult to be convergent with low classification accuracy.
+As one of the most commonly used binary classification algorithm, logistic regression is used as well but difficult to be convergent with low classification accuracy. In this case, the final classification is not completely convergent with the accuracy of only 88.1%. 
 
 #### Task A2 - smile detection
 
